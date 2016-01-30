@@ -18,7 +18,8 @@ public class CharacterMovement : MonoBehaviour {
     private Rigidbody currentAttachedPlatform;
     private float xVelocity, zVelocity;
     private bool bApplyJump;
-    private bool bJumping;
+	//huehue
+    public bool bJumping;
     private bool bBlockMovement;
 
     // Use this for initialization

@@ -10,8 +10,6 @@ GameObject:
   - 4: {fileID: 413342}
   - 33: {fileID: 3383016}
   - 23: {fileID: 2338104}
-  - 95: {fileID: 9599082}
-  - 114: {fileID: 11489524}
   m_Layer: 0
   m_Name: PalilloSpawner
   m_TagString: Untagged
@@ -94,23 +92,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121330}
   m_Mesh: {fileID: 4300000, guid: 00a12d0740cc644e0805c897fbb8ccc6, type: 3}
---- !u!95 &9599082
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121330}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 00a12d0740cc644e0805c897fbb8ccc6, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11445374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,23 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPeriod: 1
-  PalilloPrefab: {fileID: 5461444, guid: 7667a6689cdfa4d339973205c40264d1, type: 2}
-  PalilloXSpeed: 1
-  PalilloYSpeed: 0
-  PalilloTimeToLive: 10
---- !u!114 &11489524
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd432093ef3fe4eeb839d43192f8f0a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpawnPeriod: 1
-  PalilloPrefab: {fileID: 5461444, guid: 7667a6689cdfa4d339973205c40264d1, type: 2}
+  PalilloPrefab: {fileID: 5461444, guid: 21dbe8b4e316246d9b0ec6735c5cbf03, type: 2}
   PalilloXSpeed: 1
   PalilloYSpeed: 0
   PalilloTimeToLive: 10
@@ -182,6 +147,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: PalilloPrefab
+      value: 
+      objectReference: {fileID: 5461444, guid: 21dbe8b4e316246d9b0ec6735c5cbf03, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121330}

@@ -11,7 +11,7 @@ public class LanzadorPalillos : MonoBehaviour
 	[Range(-10.0f, 10.0f)]
 	public float PalilloXSpeed;
 	[Range(-10.0f, 10.0f)]
-	public float PalilloYSpeed;
+	public float PalilloZSpeed;
 	
 	[Range(0.0f, 100.0f)]
 	public float PalilloTimeToLive = 10.0f;
@@ -26,7 +26,7 @@ public class LanzadorPalillos : MonoBehaviour
 	void Spawn()
 	{
 		var pb = PalilloPrefab.GetComponent<Palillo> ();
-		pb.PalilloVelocity = new Vector3(PalilloXSpeed, PalilloYSpeed, 0.0f);
+		pb.PalilloVelocity = new Vector3(PalilloXSpeed, 0.0f, PalilloZSpeed);
 		pb.TimeToLive = PalilloTimeToLive;
 		Instantiate (PalilloPrefab, transform.position, transform.rotation);
 	}
