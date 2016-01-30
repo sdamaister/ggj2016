@@ -5,8 +5,9 @@
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_BumpTex ("Bump", 2D) = "bump" {}
 		_NormalIntensity("Intensity", Range(0,2)) = 1
-		_Roughness ("Roughness", float) = 0.0
-		_RimPower ("Rim power", Range(0.1, 3)) = 2
+		_Roughness("Roughness", float) = 0.0
+		_RimAmmount("Rim ammount", Range(0, 0.3)) = 0.05
+		_RimPower ("Rim power", Range(0, 5)) = 2
 	}
 
 	SubShader{
@@ -17,10 +18,14 @@
 		#pragma surface surf Oren_Nayar
 		#pragma target 3.0
 
+		float4 _RimColor;
 		float _Roughness;
+		float _RimAmmount;
+		float _RimPower;
 
 		inline float4 LightingOren_Nayar(SurfaceOutput s, half3 lightDir, half3 viewDir, half atten)
 		{
+			// OrenNayar
 			float roughness = _Roughness;
 			float roughnessSq = roughness * roughness;
 
@@ -40,12 +45,18 @@
 
 			float cos_phi = saturate(dot(light_plane, view_plane));
 
-
 			float diffuse_oren_nayar = (cos_phi * sin_theta) / max(cos_theta.x, cos_theta.y);
 			float diffuse = cos_theta.x * (oren_nayar.x + oren_nayar.y * diffuse_oren_nayar);
 
+			// Rim lighting
+			float3 halfVec = normalize(lightDir + viewDir);
+			float fresnel = saturate(pow(1 - dot(viewDir, halfVec), 5.0));
+			fresnel += _RimAmmount * (1 - fresnel);
+			float rim = saturate(pow(1 - dot(viewDir, s.Normal), _RimPower)) * fresnel;
+
+			// final color
 			float4 color;
-			color.rgb = s.Albedo * _LightColor0.rgb * (diffuse * atten);
+			color.rgb = s.Albedo * _LightColor0.rgb * (diffuse * atten) + (rim * _RimColor);
 			color.a = s.Alpha;
 
 			return color;
@@ -54,9 +65,7 @@
 		sampler2D _MainTex;
 		sampler2D _BumpTex;
 		float4 _Color;
-		float4 _RimColor;
 		float _NormalIntensity;
-		float _RimPower;
 
 		struct Input {
 			float2 uv_MainTex;
