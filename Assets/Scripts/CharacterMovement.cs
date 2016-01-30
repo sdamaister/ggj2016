@@ -14,16 +14,21 @@ public class CharacterMovement : MonoBehaviour {
     public float jumpForce = 600.0f;
 
     private Rigidbody rb;
+    private Transform mesh;
+    private Animator animator;
     private Vector3 currentDirection;
     private Rigidbody currentAttachedPlatform;
     private float xVelocity, zVelocity;
     private bool bApplyJump;
-    private bool bJumping;
+	//huehue
+    public bool bJumping;
     private bool bBlockMovement;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
+        mesh = GetComponentInChildren<Transform>();
+        animator = GetComponentInChildren<Animator>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
@@ -47,7 +52,23 @@ public class CharacterMovement : MonoBehaviour {
         {
             bApplyJump = true;
         }
-	}
+
+        if (Mathf.Abs(newXVelocity) > 0.0f || Mathf.Abs(newZVelocity) > 0.0f)
+        {
+            animator.SetFloat("speed", 2.0f);
+        }
+        else
+        {
+            animator.SetFloat("speed", 0.0f);
+        }
+
+        if (bJumping)
+        {
+            Debug.Log("Jumping!!!!");
+        }
+
+        animator.SetBool("bJumping", bJumping);
+    }
 
     void FixedUpdate()
     {
@@ -60,7 +81,7 @@ public class CharacterMovement : MonoBehaviour {
         {
             rb.AddForce(Vector3.up * jumpForce);
             bApplyJump = false;
-            bJumping = true;
+            SetJumping(true);
         }
 
         float speed = bJumping ? characterAirSpeed : characterGroundSpeed;
@@ -73,6 +94,9 @@ public class CharacterMovement : MonoBehaviour {
         {
             rb.velocity = new Vector3(xVelocity * speed, rb.velocity.y, zVelocity * speed);
         }
+
+        //mesh.rotation = Quaternion.Euler(rb.velocity);
+        mesh.LookAt(mesh.position + new Vector3(rb.velocity.x, 0.0f, rb.velocity.z));
     }
 
     void OnCollisionEnter(Collision collision)
@@ -93,7 +117,7 @@ public class CharacterMovement : MonoBehaviour {
         {
             if (Vector3.Angle(contact.normal, Vector3.up) <= 45)
             {
-                bJumping = false;
+                SetJumping(false);
                 bBlockMovement = false;
                 break;
             }
@@ -107,5 +131,10 @@ public class CharacterMovement : MonoBehaviour {
     void OnCollisionExit(Collision collision)
     {
         currentAttachedPlatform = null;
+    }
+
+    void SetJumping(bool bMustJump)
+    {
+        bJumping = bMustJump;
     }
 }

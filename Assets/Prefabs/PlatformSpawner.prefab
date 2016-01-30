@@ -75,9 +75,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPeriod: 2
-  PlatformAsset: {fileID: 5435362, guid: 42d519f23b267dd4692b9054f415c3e2, type: 2}
+  PlatformAssets:
+  - {fileID: 5435362, guid: 42d519f23b267dd4692b9054f415c3e2, type: 2}
   PlatformXSpeed: 2
-  PlatformYSpeed: 0
+  PlatformZSpeed: 0
   PlatformTimeToLive: 10
 --- !u!1001 &100100000
 Prefab:
@@ -87,12 +88,20 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: PlatformAssets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: PlatformAssets.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

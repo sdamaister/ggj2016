@@ -12,9 +12,10 @@ GameObject:
   - 23: {fileID: 2392230}
   - 54: {fileID: 5461444}
   - 114: {fileID: 11472758}
+  - 136: {fileID: 13630228}
   m_Layer: 0
   m_Name: palillo
-  m_TagString: Untagged
+  m_TagString: PlayerKill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,9 +26,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167294}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -0.0446, y: 0.5439, z: 0.5762}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
+  m_LocalPosition: {x: -1.263, y: 1.457, z: 6.212}
+  m_LocalScale: {x: 13, y: 13, z: 13}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -90,15 +91,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1016a6bc8f7948d29ba94adfb66bc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PalilloVelocity: {x: 0, y: 0, z: -2}
-  TimeToLive: 10
+  PalilloVelocity: {x: 0, y: 0, z: -4}
+  TimeToLive: 2.5
+--- !u!136 &13630228
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01161252
+  m_Height: 0.2095384
+  m_Direction: 1
+  m_Center: {x: 9.3132246e-10, y: -0.083638355, z: -0.0000000018626451}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: PlayerKill
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167294}

@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 public class SpeechArea : MonoBehaviour {
 	public string speech = "";
-	public bool speaking = false;
+	private bool speaking = false;
 	public float bubbleTimer = 5.0f;
 
 	private GameObject characterGameObject;
@@ -19,7 +20,6 @@ public class SpeechArea : MonoBehaviour {
 		if(speaking)
 		{
 			timer -= Time.deltaTime;
-			Debug.logger.Log(timer);
 			if(timer <= 0.0f)
 			{
 				speaking = false;
@@ -40,8 +40,23 @@ public class SpeechArea : MonoBehaviour {
 		}
 	}
 
+
+	void OnSceneGUI ()
+    {
+   		UnityEditor.Handles.Label(this.transform.position, "asdfasdf");
+    }
+
+	void OnDrawGizmos() {
+        Gizmos.color = new Color(1.0f ,1.0f, 0.0f, 0.25f);
+		Gizmos.DrawCube(this.GetComponent<Collider>().bounds.center, this.GetComponent<Collider>().bounds.extents * 2.0f);
+        
+    }
+
 //	void OnTriggerExit(Collider collider)
 //	{
 //		collider.gameObject.SendMessage("ShutUp");
 //	}
 }
+
+
+
