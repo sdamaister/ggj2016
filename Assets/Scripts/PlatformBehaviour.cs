@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformBehaviour : MonoBehaviour {
+public class PlatformBehaviour : MonoBehaviour 
+{
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		Destroy (gameObject, TimeToLive);
 		rb = GetComponent<Rigidbody> ();
 		//rb.velocity = PlatformVelocity;
