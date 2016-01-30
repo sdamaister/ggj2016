@@ -123,8 +123,12 @@ ModelImporter:
     4300018: Mano_IZ
     4300020: Pelo_03
     4300022: Pelo_04
-    7400000: Take 001
+    7400000: jumping
+    7400002: walk
+    7400004: Idle
+    7400006: run
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Antebrazo_DR
     13700002: Antebrazo_IZ
     13700004: Brazo_DR
@@ -151,13 +155,565 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jumping
+      takeName: Take 001
+      firstFrame: 125
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Geometria
+        weight: 0
+      - path: Geometria/Antebrazo_DR
+        weight: 0
+      - path: Geometria/Antebrazo_IZ
+        weight: 0
+      - path: Geometria/Brazo_DR
+        weight: 0
+      - path: Geometria/Brazo_IZ
+        weight: 0
+      - path: Geometria/Cabeza
+        weight: 0
+      - path: Geometria/Mano_DR
+        weight: 0
+      - path: Geometria/Mano_IZ
+        weight: 0
+      - path: Geometria/Pelo_03
+        weight: 0
+      - path: Geometria/Pelo_04
+        weight: 0
+      - path: Geometria/Pierna_DR
+        weight: 0
+      - path: Geometria/Pierna_IZ
+        weight: 0
+      - path: Geometria/Torso
+        weight: 0
+      - path: Huesos
+        weight: 1
+      - path: Huesos/Root
+        weight: 1
+      - path: Huesos/Root/joint2
+        weight: 1
+      - path: Huesos/Root/joint2/joint3
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint22
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26/joint27
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28/joint29
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint38
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1/joint27 1
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1
+        weight: 0
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1/joint29 1
+        weight: 0
+      - path: Huesos/Root/joint39
+        weight: 1
+      - path: Huesos/Root/joint39/joint11
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12
+        weight: 0
+      - path: Huesos/Root/joint39/joint11/joint12/joint13
+        weight: 0
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14
+        weight: 0
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14/joint15
+        weight: 0
+      - path: Huesos/Root/joint39/joint45
+        weight: 0
+      - path: Huesos/Root/joint39/joint45/joint12 1
+        weight: 0
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1
+        weight: 0
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1
+        weight: 0
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1/joint15 1
+        weight: 0
+      - path: nurbsCircle1
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Geometria
+        weight: 1
+      - path: Geometria/Antebrazo_DR
+        weight: 1
+      - path: Geometria/Antebrazo_IZ
+        weight: 1
+      - path: Geometria/Brazo_DR
+        weight: 1
+      - path: Geometria/Brazo_IZ
+        weight: 1
+      - path: Geometria/Cabeza
+        weight: 1
+      - path: Geometria/Mano_DR
+        weight: 1
+      - path: Geometria/Mano_IZ
+        weight: 1
+      - path: Geometria/Pelo_03
+        weight: 1
+      - path: Geometria/Pelo_04
+        weight: 1
+      - path: Geometria/Pierna_DR
+        weight: 1
+      - path: Geometria/Pierna_IZ
+        weight: 1
+      - path: Geometria/Torso
+        weight: 1
+      - path: Huesos
+        weight: 1
+      - path: Huesos/Root
+        weight: 1
+      - path: Huesos/Root/joint2
+        weight: 1
+      - path: Huesos/Root/joint2/joint3
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26/joint27
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28/joint29
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1/joint27 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1/joint29 1
+        weight: 1
+      - path: Huesos/Root/joint39
+        weight: 1
+      - path: Huesos/Root/joint39/joint11
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: Huesos/Root/joint39/joint45
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1/joint15 1
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 23
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Geometria
+        weight: 1
+      - path: Geometria/Antebrazo_DR
+        weight: 1
+      - path: Geometria/Antebrazo_IZ
+        weight: 1
+      - path: Geometria/Brazo_DR
+        weight: 1
+      - path: Geometria/Brazo_IZ
+        weight: 1
+      - path: Geometria/Cabeza
+        weight: 1
+      - path: Geometria/Mano_DR
+        weight: 1
+      - path: Geometria/Mano_IZ
+        weight: 1
+      - path: Geometria/Pelo_03
+        weight: 1
+      - path: Geometria/Pelo_04
+        weight: 1
+      - path: Geometria/Pierna_DR
+        weight: 1
+      - path: Geometria/Pierna_IZ
+        weight: 1
+      - path: Geometria/Torso
+        weight: 1
+      - path: Huesos
+        weight: 1
+      - path: Huesos/Root
+        weight: 1
+      - path: Huesos/Root/joint2
+        weight: 1
+      - path: Huesos/Root/joint2/joint3
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26/joint27
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28/joint29
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1/joint27 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1/joint29 1
+        weight: 1
+      - path: Huesos/Root/joint39
+        weight: 1
+      - path: Huesos/Root/joint39/joint11
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: Huesos/Root/joint39/joint45
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1/joint15 1
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 82
+      lastFrame: 122
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Geometria
+        weight: 1
+      - path: Geometria/Antebrazo_DR
+        weight: 1
+      - path: Geometria/Antebrazo_IZ
+        weight: 1
+      - path: Geometria/Brazo_DR
+        weight: 1
+      - path: Geometria/Brazo_IZ
+        weight: 1
+      - path: Geometria/Cabeza
+        weight: 1
+      - path: Geometria/Mano_DR
+        weight: 1
+      - path: Geometria/Mano_IZ
+        weight: 1
+      - path: Geometria/Pelo_03
+        weight: 1
+      - path: Geometria/Pelo_04
+        weight: 1
+      - path: Geometria/Pierna_DR
+        weight: 1
+      - path: Geometria/Pierna_IZ
+        weight: 1
+      - path: Geometria/Torso
+        weight: 1
+      - path: Huesos
+        weight: 1
+      - path: Huesos/Root
+        weight: 1
+      - path: Huesos/Root/joint2
+        weight: 1
+      - path: Huesos/Root/joint2/joint3
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint26/joint27
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint22/joint23/joint24/joint25/joint28/joint29
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint26
+          1/joint27 1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1
+        weight: 1
+      - path: Huesos/Root/joint2/joint3/joint38/joint23 1/joint24 1/joint25 1/joint28
+          1/joint29 1
+        weight: 1
+      - path: Huesos/Root/joint39
+        weight: 1
+      - path: Huesos/Root/joint39/joint11
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: Huesos/Root/joint39/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: Huesos/Root/joint39/joint45
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1
+        weight: 1
+      - path: Huesos/Root/joint39/joint45/joint12 1/joint13 1/joint14 1/joint15 1
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
     isReadable: 1
   meshes:
     lODScreenPercentages: []
