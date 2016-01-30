@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour {
 
     private Rigidbody rb;
     private Vector3 currentDirection;
+    private Rigidbody currentAttachedPlatform;
     private float xVelocity, zVelocity;
     private bool bApplyJump;
     private bool bJumping;
@@ -58,11 +59,31 @@ public class CharacterMovement : MonoBehaviour {
         }
 
         float speed = bJumping ? characterAirSpeed : characterGroundSpeed;
-        rb.velocity = new Vector3(xVelocity * speed, rb.velocity.y, zVelocity * speed);
+
+        if (xVelocity == 0.0f && zVelocity == 0.0f && currentAttachedPlatform != null)
+        {
+            rb.velocity = new Vector3(currentAttachedPlatform.velocity.x, rb.velocity.y, currentAttachedPlatform.velocity.z);
+        }
+        else
+        {
+            rb.velocity = new Vector3(xVelocity * speed, rb.velocity.y, zVelocity * speed);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "Platform")
+        {
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                if (Vector3.Angle(contact.normal, Vector3.up) <= 5)
+                {
+                    currentAttachedPlatform = collision.gameObject.GetComponent<Rigidbody>();
+                    break;
+                }
+            }
+        }
+
         foreach (ContactPoint contact in collision.contacts)
         {
             if (Vector3.Angle(contact.normal, Vector3.up) <= 45)
@@ -76,5 +97,10 @@ public class CharacterMovement : MonoBehaviour {
                 bBlockMovement = true;
             }
         }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        currentAttachedPlatform = null;
     }
 }
