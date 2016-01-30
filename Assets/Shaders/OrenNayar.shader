@@ -69,7 +69,7 @@
 			half3 normal = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
 			normal = float3(normal.x * _NormalIntensity, normal.y * _NormalIntensity, normal.z);
 
-			o.Albedo = c.rgb * rim * _RimColor;
+			o.Albedo = c.rgb;
 			o.Normal = normal;
 			o.Alpha = c.a;
 		}
