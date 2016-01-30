@@ -18,6 +18,7 @@ public class CharacterMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
 	}
