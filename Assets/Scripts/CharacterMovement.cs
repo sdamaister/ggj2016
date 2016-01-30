@@ -29,12 +29,12 @@ public class CharacterMovement : MonoBehaviour {
 
         Vector3 newCurrentDirection = Quaternion.Euler(0, 45, 0) * Vector3.Normalize(new Vector3(newXVelocity, 0.0f, newZVelocity));
 
-        /*if ((bJumping && newCurrentDirection.magnitude > 0) || !bJumping)
-        {*/
+        if ((bJumping && newCurrentDirection.magnitude > 0) || !bJumping)
+        {
             currentDirection = newCurrentDirection;
             xVelocity = currentDirection.x;
             zVelocity = currentDirection.z;
-        //}
+        }
 
         if (Input.GetButtonDown("Jump") && !bJumping)
         {
@@ -69,14 +69,13 @@ public class CharacterMovement : MonoBehaviour {
             if (Vector3.Angle(contact.normal, Vector3.up) <= 45)
             {
                 bJumping = false;
-                //bBlockMovement = false;
+                bBlockMovement = false;
                 break;
             }
             else if (bJumping)
             {
-                //bBlockMovement = true;
+                bBlockMovement = true;
             }
-
         }
     }
 }
