@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf88758ad5d27c4e813132263af3786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformVelocity: {x: 0, y: 0, z: 0}
-  TimeToLive: 10
+  PlatformVelocity: {x: 4, y: 0, z: 0}
+  TimeToLive: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

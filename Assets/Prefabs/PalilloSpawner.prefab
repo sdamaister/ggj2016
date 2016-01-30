@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPeriod: 1
-  PalilloPrefab: {fileID: 5461444, guid: 21dbe8b4e316246d9b0ec6735c5cbf03, type: 2}
+  PalilloPrefab: {fileID: 5461444, guid: 3d0730a8e9e624f24b77755853eb5299, type: 2}
   PalilloXSpeed: 1
-  PalilloYSpeed: 0
+  PalilloZSpeed: 0
   PalilloTimeToLive: 10
 --- !u!1001 &100100000
 Prefab:
@@ -150,7 +150,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: PalilloPrefab
       value: 
-      objectReference: {fileID: 5461444, guid: 21dbe8b4e316246d9b0ec6735c5cbf03, type: 2}
+      objectReference: {fileID: 5461444, guid: 3d0730a8e9e624f24b77755853eb5299, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121330}
