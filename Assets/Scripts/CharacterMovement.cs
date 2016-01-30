@@ -23,14 +23,15 @@ public class CharacterMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        float newXVelocity = Input.GetAxis("Horizontal");
-        float newZVelocity = Input.GetAxis("Vertical");
+        float newXVelocity = -Input.GetAxis("Vertical");
+        float newZVelocity = Input.GetAxis("Horizontal");
 
         Vector3 newCurrentDirection = Quaternion.Euler(0, 45, 0) * Vector3.Normalize(new Vector3(newXVelocity, 0.0f, newZVelocity));
 
@@ -63,8 +64,6 @@ public class CharacterMovement : MonoBehaviour {
 
         float speed = bJumping ? characterAirSpeed : characterGroundSpeed;
         rb.velocity = new Vector3(xVelocity * speed, rb.velocity.y, zVelocity * speed);
-        //rb.AddForce(new Vector3(xVelocity * force * Time.fixedDeltaTime, 0.0f, zVelocity * force * Time.fixedDeltaTime));
-        //Vector3.ClampMagnitude(rb.velocity, maxCharacterSpeed);
     }
 
     void OnCollisionEnter(Collision collision)
