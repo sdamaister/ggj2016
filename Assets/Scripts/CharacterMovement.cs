@@ -6,13 +6,18 @@ public class CharacterMovement : MonoBehaviour {
 
     public float characterGroundSpeed = 2.0f;
     public float characterAirSpeed = 1.5f;
+    public float jumpForce = 20.0f;
 
     private Rigidbody rb;
     private float xVelocity, zVelocity;
+    private bool bApplyJump;
+    private bool bJumping;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
+        bApplyJump = false;
+        bJumping = false;
 	}
 	
 	// Update is called once per frame
@@ -24,10 +29,38 @@ public class CharacterMovement : MonoBehaviour {
         Debug.Log("currentDirection is " + currentDirection);
         xVelocity = currentDirection.x;
         zVelocity = currentDirection.z;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            bApplyJump = true;
+        }
 	}
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector3(xVelocity * characterGroundSpeed, rb.velocity.y, zVelocity * characterGroundSpeed);
+        if (bApplyJump)
+        {
+            rb.AddForce(Vector3.up * jumpForce);
+            bApplyJump = false;
+            bJumping = true;
+        }
+
+        float speed = bJumping ? characterAirSpeed : characterGroundSpeed;
+        rb.velocity = new Vector3(xVelocity * speed, rb.velocity.y, zVelocity * speed);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        foreach (ContactPoint contact in collision.contacts)
+        {
+            print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
+            Debug.DrawRay(contact.point, contact.normal, Color.white);
+
+            if (Vector3.Angle(contact.normal, Vector3.up) <= 45)
+            {
+                bJumping = false;
+                break;    
+            }
+        }
     }
 }
