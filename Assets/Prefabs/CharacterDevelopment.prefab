@@ -13,6 +13,8 @@ GameObject:
   - 23: {fileID: 2301422}
   - 54: {fileID: 5429364}
   - 114: {fileID: 11404540}
+  - 114: {fileID: 11481772}
+  - 114: {fileID: 11443258}
   m_Layer: 0
   m_Name: CharacterDevelopment
   m_TagString: Untagged
@@ -93,7 +95,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterGroundSpeed: 5
   characterAirSpeed: 4
-  jumpForce: 600
+  jumpForce: 305
+--- !u!114 &11443258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4fdb84036815e46bd42962c3f10352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11481772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9009a9af1d3404f904850719326810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13603056
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -113,7 +137,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: jumpForce
+      value: 305
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184792}
