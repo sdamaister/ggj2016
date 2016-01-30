@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerKill
   - LevelEnd
+  - Platform
   layers:
   - Default
   - TransparentFX
