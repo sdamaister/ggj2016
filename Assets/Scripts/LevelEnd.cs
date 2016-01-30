@@ -17,7 +17,7 @@ public class LevelEnd : MonoBehaviour {
 	{
 		if(collision.gameObject.CompareTag(GameTags.LevelEnd))
 		{
-			// run player killing method
+			// run level end method
 		}
 	}
 }
