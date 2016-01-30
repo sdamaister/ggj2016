@@ -1,12 +1,22 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: baebf4f07cf1345d69bc155c68eff937
 folderAsset: yes
 timeCreated: 1454106790
 =======
+guid: 53095ebb9c4364fde88a43312946d868
+folderAsset: yes
+timeCreated: 1454109580
+>>>>>>> origin/master
+=======
 guid: beb5b3109e306af499f8367866dc1dbb
 folderAsset: yes
 timeCreated: 1454106378
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> 0d650fa195802030d8e3787a1618bf86167f1abf
 >>>>>>> origin/master
 licenseType: Free
 DefaultImporter:
