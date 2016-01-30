@@ -13,11 +13,13 @@ public class LevelEnd : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision collision) 
+	void OnTriggerEnter(Collider collision) 
 	{
 		if(collision.gameObject.CompareTag(GameTags.LevelEnd))
 		{
-			// run level end method
+			level.OnLevelEnd();
 		}
 	}
+
+	public LevelBehaviour level;
 }

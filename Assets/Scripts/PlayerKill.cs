@@ -13,10 +13,13 @@ public class PlayerKill : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision collision) {
+	void OnTriggerEnter(Collider collision) 
+	{
 		if(collision.gameObject.CompareTag(GameTags.PlayerKill))
 		{
-			// run player killing method
+			level.OnPlayerKill();
 		}
 	}
+
+	public LevelBehaviour level;
 }
