@@ -62,11 +62,6 @@ public class CharacterMovement : MonoBehaviour {
             animator.SetFloat("speed", 0.0f);
         }
 
-        if (bJumping)
-        {
-            Debug.Log("Jumping!!!!");
-        }
-
         animator.SetBool("bJumping", bJumping);
     }
 
