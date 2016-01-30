@@ -7,11 +7,6 @@ public class PlatformSpawn : MonoBehaviour {
 	void Start () {
 		InvokeRepeating ("Spawn", 0, SpawnPeriod);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
 
 	void Spawn()
 	{
