@@ -134,7 +134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: speech
-      value: me voy al bar, hostia
+      value: Me he dejado la cartera!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5b751b0b940407681775323e94414d, type: 2}
@@ -410,7 +410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: speech
-      value: Que hambre tengo
+      value: La gente me necesita
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5b751b0b940407681775323e94414d, type: 2}
@@ -769,11 +769,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 413090, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 77.24
+      value: 66.33
       objectReference: {fileID: 0}
     - target: {fileID: 413090, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -19.79
+      value: -11.42
       objectReference: {fileID: 0}
     - target: {fileID: 413090, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -809,7 +809,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: speech
-      value: Yo queria ser actor :(
+      value: Si tampoco se actuar
       objectReference: {fileID: 0}
     - target: {fileID: 413090, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: m_LocalScale.x
@@ -1414,7 +1414,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: speech
-      value: Vamos a salvar gente va...
+      value: Ya esta bien de pintxos
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5b751b0b940407681775323e94414d, type: 2}
@@ -1618,7 +1618,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: speech
-      value: con el buen dia que hace...
+      value: Pintxito es un amigo
       objectReference: {fileID: 0}
     - target: {fileID: 413090, guid: 0d5b751b0b940407681775323e94414d, type: 2}
       propertyPath: m_LocalScale.x
