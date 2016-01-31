@@ -25,11 +25,18 @@ public class CharacterMovement : MonoBehaviour {
     public bool bJumping;
     private bool bBlockMovement;
 
+
+    public AudioClip jumpClip;
+    public AudioClip landClip;
+
+    private AudioSource audioSource;
+
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
         mesh = GetComponentInChildren<Transform>();
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
@@ -132,5 +139,14 @@ public class CharacterMovement : MonoBehaviour {
     void SetJumping(bool bMustJump)
     {
         bJumping = bMustJump;
+
+        if (bJumping)
+        {
+            audioSource.PlayOneShot(jumpClip);
+        }
+        else
+        {
+            audioSource.PlayOneShot(landClip);
+        }
     }
 }
