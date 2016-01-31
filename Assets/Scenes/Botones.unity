@@ -719,7 +719,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2DScene
+          m_StringArgument: SplashScreen
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -850,7 +850,7 @@ RectTransform:
   m_GameObject: {fileID: 926707460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 361}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5293496, y: 1.5293497, z: 1.5293497}
   m_Children: []
   m_Father: {fileID: 115517123}
   m_RootOrder: 3
@@ -897,7 +897,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2be2395f63f624648adef169715b0fb4, type: 3}
-    m_FontSize: 50
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -907,8 +907,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 2
-  m_Text: TITULO DEL JUEGOOO
+    m_LineSpacing: 0.84
+  m_Text: lAS AVENTURAS Y DESVENTURAS DE SUPERPINTXO Y PINTXITO
 --- !u!222 &926707464
 CanvasRenderer:
   m_ObjectHideFlags: 0

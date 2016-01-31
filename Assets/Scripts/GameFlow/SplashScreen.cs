@@ -19,7 +19,7 @@ public class SplashScreen : MonoBehaviour {
 
         if (elapsedTime >= TimeToMakeTransition)
         {
-            SceneManager.LoadScene("Botones");
+			SceneManager.LoadScene("2DScene");
         }
 	}
 }
