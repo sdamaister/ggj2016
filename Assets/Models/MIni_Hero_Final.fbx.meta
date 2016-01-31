@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 21ba7204b554c43bbb459824d34a934b
+timeCreated: 1454179283
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Antebrazo_DR
+    100002: Antebrazo_IZ
+    100004: Brazo_DR
+    100006: Brazo_IZ
+    100008: Cabeza
+    100010: Geometria
+    100012: Huesos
+    100014: joint10
+    100016: joint11
+    100018: joint12
+    100020: joint12 1
+    100022: joint13
+    100024: joint13 1
+    100026: joint14
+    100028: joint14 1
+    100030: joint15
+    100032: joint15 1
+    100034: joint2
+    100036: joint22
+    100038: joint23
+    100040: joint23 1
+    100042: joint24
+    100044: joint24 1
+    100046: joint25
+    100048: joint25 1
+    100050: joint26
+    100052: joint26 1
+    100054: joint27
+    100056: joint27 1
+    100058: joint28
+    100060: joint28 1
+    100062: joint29
+    100064: joint29 1
+    100066: joint3
+    100068: joint38
+    100070: joint39
+    100072: joint4
+    100074: joint45
+    100076: joint5
+    100078: joint6
+    100080: joint7
+    100082: joint8
+    100084: joint9
+    100086: Mano_DR
+    100088: Mano_IZ
+    100090: //RootNode
+    100092: nurbsCircle1
+    100094: Pelo_03
+    100096: Pelo_04
+    100098: Pierna_DR
+    100100: Pierna_IZ
+    100102: Root
+    100104: Torso
+    400000: Antebrazo_DR
+    400002: Antebrazo_IZ
+    400004: Brazo_DR
+    400006: Brazo_IZ
+    400008: Cabeza
+    400010: Geometria
+    400012: Huesos
+    400014: joint10
+    400016: joint11
+    400018: joint12
+    400020: joint12 1
+    400022: joint13
+    400024: joint13 1
+    400026: joint14
+    400028: joint14 1
+    400030: joint15
+    400032: joint15 1
+    400034: joint2
+    400036: joint22
+    400038: joint23
+    400040: joint23 1
+    400042: joint24
+    400044: joint24 1
+    400046: joint25
+    400048: joint25 1
+    400050: joint26
+    400052: joint26 1
+    400054: joint27
+    400056: joint27 1
+    400058: joint28
+    400060: joint28 1
+    400062: joint29
+    400064: joint29 1
+    400066: joint3
+    400068: joint38
+    400070: joint39
+    400072: joint4
+    400074: joint45
+    400076: joint5
+    400078: joint6
+    400080: joint7
+    400082: joint8
+    400084: joint9
+    400086: Mano_DR
+    400088: Mano_IZ
+    400090: //RootNode
+    400092: nurbsCircle1
+    400094: Pelo_03
+    400096: Pelo_04
+    400098: Pierna_DR
+    400100: Pierna_IZ
+    400102: Root
+    400104: Torso
+    4300000: Cabeza
+    4300002: Pierna_DR
+    4300004: Pierna_IZ
+    4300006: Torso
+    4300008: Antebrazo_DR
+    4300010: Antebrazo_IZ
+    4300012: Brazo_DR
+    4300014: Brazo_IZ
+    4300016: Mano_DR
+    4300018: Mano_IZ
+    4300020: Pelo_03
+    4300022: Pelo_04
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Antebrazo_DR
+    13700002: Antebrazo_IZ
+    13700004: Brazo_DR
+    13700006: Brazo_IZ
+    13700008: Cabeza
+    13700010: Mano_DR
+    13700012: Mano_IZ
+    13700014: Pelo_03
+    13700016: Pelo_04
+    13700018: Pierna_DR
+    13700020: Pierna_IZ
+    13700022: Torso
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
