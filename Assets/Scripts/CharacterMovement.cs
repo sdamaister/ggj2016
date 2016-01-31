@@ -4,13 +4,13 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour {
 
-	[Range (0.0f, 5.0f)]
+	[Range (0.0f, 15.0f)]
     public float characterGroundSpeed = 2.0f;
 
-	[Range (0.0f, 4.0f)]
+	[Range (0.0f, 14.0f)]
     public float characterAirSpeed = 1.5f;
 
-	[Range (0.0f, 600.0f)]
+	[Range (0.0f, 1500.0f)]
     public float jumpForce = 600.0f;
 
     private Rigidbody rb;
