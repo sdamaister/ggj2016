@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
-using UnityEditor;
+
 using System.Collections;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class SpeechArea : MonoBehaviour {
 	public string speech = "";
@@ -46,11 +49,12 @@ public class SpeechArea : MonoBehaviour {
 		}
 	}
 
-
+	#if UNITY_EDITOR
 	void OnSceneGUI ()
     {
    		UnityEditor.Handles.Label(this.transform.position, "asdfasdf");
     }
+    #endif
 
 	void OnDrawGizmos() {
         Gizmos.color = new Color(1.0f ,1.0f, 0.0f, 0.25f);

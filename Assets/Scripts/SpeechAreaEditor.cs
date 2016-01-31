@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 
 [CustomEditor(typeof(SpeechArea))]
 public class SpeechAreaEditor : Editor {
@@ -17,3 +18,4 @@ public class SpeechAreaEditor : Editor {
 		Handles.Label(myTarget.gameObject.transform.position, myTarget.speech);
 	}
 }
+#endif
