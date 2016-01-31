@@ -13,6 +13,10 @@ public class CharacterMovement : MonoBehaviour {
 	[Range (0.0f, 900.0f)]
     public float jumpForce = 600.0f;
 
+    private AudioSource characterAudioPlayer;
+
+    public AudioClip jumpAudio;
+
     private Rigidbody rb;
     private Transform mesh;
     private Animator animator;
@@ -29,6 +33,7 @@ public class CharacterMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         mesh = GetComponentInChildren<Transform>();
         animator = GetComponentInChildren<Animator>();
+        characterAudioPlayer = GetComponent<AudioSource>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
@@ -131,5 +136,10 @@ public class CharacterMovement : MonoBehaviour {
     void SetJumping(bool bMustJump)
     {
         bJumping = bMustJump;
+
+        if (bJumping)
+        {
+            characterAudioPlayer.PlayOneShot(jumpAudio);
+        }
     }
 }
