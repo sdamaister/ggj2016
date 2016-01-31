@@ -6,6 +6,7 @@ public class SpeechArea : MonoBehaviour {
 	public string speech = "";
 	private bool speaking = false;
 	public float bubbleTimer = 5.0f;
+    public bool bMustGoNextLevel = false;
 
 	private GameObject characterGameObject;
 	private float timer = 0.0f;
@@ -24,6 +25,11 @@ public class SpeechArea : MonoBehaviour {
 			{
 				speaking = false;
 				characterGameObject.SendMessage("ShutUp");
+
+                if (bMustGoNextLevel)
+                {
+                    characterGameObject.GetComponent<PlayerKill>().level.OnLevelEnd();
+                }
 			}
 		}
 
