@@ -3,7 +3,7 @@ guid: cce01c000ad164ec8848d06df2b2bee0
 timeCreated: 1454158386
 licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: Antebrazo_DR
     100002: Antebrazo_IZ
@@ -56,6 +56,9 @@ ModelImporter:
     100096: Pierna_IZ
     100098: Root
     100100: Torso
+    100102: Geometria
+    100104: Huesos
+    100106: joint45
     400000: Antebrazo_DR
     400002: Antebrazo_IZ
     400004: Brazo_DR
@@ -107,6 +110,9 @@ ModelImporter:
     400096: Pierna_IZ
     400098: Root
     400100: Torso
+    400102: Geometria
+    400104: Huesos
+    400106: joint45
     2300000: Antebrazo_DR
     2300002: Antebrazo_IZ
     2300004: Brazo_DR
@@ -143,7 +149,20 @@ ModelImporter:
     4300018: Mano_IZ
     4300020: Pelo_03
     4300022: Pelo_04
+    7400000: Take 001
     9500000: //RootNode
+    13700000: Antebrazo_DR
+    13700002: Antebrazo_IZ
+    13700004: Brazo_DR
+    13700006: Brazo_IZ
+    13700008: Cabeza
+    13700010: Mano_DR
+    13700012: Mano_IZ
+    13700014: Pelo_03
+    13700016: Pelo_04
+    13700018: Pierna_DR
+    13700020: Pierna_IZ
+    13700022: Torso
   materials:
     importMaterials: 1
     materialName: 0
@@ -151,12 +170,17 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -180,24 +204,25 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
