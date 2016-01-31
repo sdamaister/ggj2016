@@ -1954,7 +1954,7 @@ Transform:
   m_LocalScale: {x: 5.3350534, y: 5.3350506, z: 5.3350506}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 37
 --- !u!23 &597503757
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4922,7 +4922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 58
+  m_RootOrder: 63
 --- !u!114 &1611313787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,8 +4934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1c43d27645c4340ace9d184cc751f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisLevelName: 3dLevel1
-  NextSceneName: GamplayTesting
+  ThisLevelName: gameover
+  NextSceneName: 2DScene
 --- !u!1001 &1636345510
 Prefab:
   m_ObjectHideFlags: 0
