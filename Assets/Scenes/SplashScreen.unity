@@ -202,19 +202,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421754, guid: 3174bbd6429a84519af51523c025f7a7, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -167
+      value: -137.9
       objectReference: {fileID: 0}
     - target: {fileID: 22421754, guid: 3174bbd6429a84519af51523c025f7a7, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 132
+      value: 148.7
       objectReference: {fileID: 0}
     - target: {fileID: 22421754, guid: 3174bbd6429a84519af51523c025f7a7, type: 2}
       propertyPath: m_Pivot.y
-      value: 0.59974486
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22421754, guid: 3174bbd6429a84519af51523c025f7a7, type: 2}
       propertyPath: m_Pivot.x
-      value: 0.7166959
+      value: 0.5753085
       objectReference: {fileID: 0}
     - target: {fileID: 11437864, guid: 3174bbd6429a84519af51523c025f7a7, type: 2}
       propertyPath: m_Text
@@ -270,6 +270,10 @@ Prefab:
     - target: {fileID: 494846, guid: afb7949d2fe33054eb7fb9696b7c8fb8, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430578, guid: afb7949d2fe33054eb7fb9696b7c8fb8, type: 2}
+      propertyPath: TimeToMakeTransition
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afb7949d2fe33054eb7fb9696b7c8fb8, type: 2}
@@ -403,7 +407,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94ef4046dd641472681f18d6482b3b3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59ada3a9880e24c349021f2026bd869b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

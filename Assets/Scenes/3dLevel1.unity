@@ -2364,7 +2364,7 @@ Transform:
   m_Children:
   - {fileID: 186178816}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
 --- !u!1001 &457170264
 Prefab:
   m_ObjectHideFlags: 0
@@ -3560,7 +3560,7 @@ Transform:
   m_Children:
   - {fileID: 401752272}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 21
 --- !u!1001 &687617347
 Prefab:
   m_ObjectHideFlags: 0
@@ -8398,7 +8398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThisLevelName: gameover
-  NextSceneName: SplashScreen
+  NextSceneName: EnoughPintxos
 --- !u!1 &1624967293
 GameObject:
   m_ObjectHideFlags: 0
