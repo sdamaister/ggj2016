@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 21ba7204b554c43bbb459824d34a934b
+guid: 4ddab49e35116465f8e292eb1a0ca9c5
+timeCreated: 1454209647
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -52,10 +54,11 @@ ModelImporter:
     100092: nurbsCircle1
     100094: Pelo_03
     100096: Pelo_04
-    100098: Pierna_DR
-    100100: Pierna_IZ
-    100102: Root
-    100104: Torso
+    100098: persp1
+    100100: Pierna_DR
+    100102: Pierna_IZ
+    100104: Root
+    100106: Torso
     400000: Antebrazo_DR
     400002: Antebrazo_IZ
     400004: Brazo_DR
@@ -105,10 +108,11 @@ ModelImporter:
     400092: nurbsCircle1
     400094: Pelo_03
     400096: Pelo_04
-    400098: Pierna_DR
-    400100: Pierna_IZ
-    400102: Root
-    400104: Torso
+    400098: persp1
+    400100: Pierna_DR
+    400102: Pierna_IZ
+    400104: Root
+    400106: Torso
     4300000: Cabeza
     4300002: Pierna_DR
     4300004: Pierna_IZ
@@ -154,7 +158,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

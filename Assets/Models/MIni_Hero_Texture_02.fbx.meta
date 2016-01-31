@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 21ba7204b554c43bbb459824d34a934b
+guid: 05b13a19df26042ea936c4a9848f88c4
+timeCreated: 1454207453
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -52,10 +54,11 @@ ModelImporter:
     100092: nurbsCircle1
     100094: Pelo_03
     100096: Pelo_04
-    100098: Pierna_DR
-    100100: Pierna_IZ
-    100102: Root
-    100104: Torso
+    100098: persp1
+    100100: Pierna_DR
+    100102: Pierna_IZ
+    100104: Root
+    100106: Torso
     400000: Antebrazo_DR
     400002: Antebrazo_IZ
     400004: Brazo_DR
@@ -105,22 +108,22 @@ ModelImporter:
     400092: nurbsCircle1
     400094: Pelo_03
     400096: Pelo_04
-    400098: Pierna_DR
-    400100: Pierna_IZ
-    400102: Root
-    400104: Torso
+    400098: persp1
+    400100: Pierna_DR
+    400102: Pierna_IZ
+    400104: Root
+    400106: Torso
     4300000: Cabeza
     4300002: Pierna_DR
     4300004: Pierna_IZ
-    4300006: Torso
-    4300008: Antebrazo_DR
-    4300010: Antebrazo_IZ
-    4300012: Brazo_DR
-    4300014: Brazo_IZ
-    4300016: Mano_DR
-    4300018: Mano_IZ
-    4300020: Pelo_03
-    4300022: Pelo_04
+    4300006: Antebrazo_DR
+    4300008: Antebrazo_IZ
+    4300010: Brazo_DR
+    4300012: Brazo_IZ
+    4300014: Mano_DR
+    4300016: Mano_IZ
+    4300018: Pelo_03
+    4300020: Pelo_04
     7400000: Take 001
     9500000: //RootNode
     13700000: Antebrazo_DR
@@ -134,7 +137,6 @@ ModelImporter:
     13700016: Pelo_04
     13700018: Pierna_DR
     13700020: Pierna_IZ
-    13700022: Torso
   materials:
     importMaterials: 1
     materialName: 0
@@ -154,7 +156,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
