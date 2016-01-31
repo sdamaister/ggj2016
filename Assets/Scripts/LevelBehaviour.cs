@@ -16,7 +16,7 @@ public class LevelBehaviour : MonoBehaviour {
 	public void OnPlayerKill()
 	{
 		Debug.Log ("OnPlayerKill, restarting");
-		UnityEngine.SceneManagement.SceneManager.LoadScene (ThisLevelName);
+		UnityEngine.SceneManagement.SceneManager.LoadScene(ThisLevelName);
 	}
 
 	public void OnLevelEnd()

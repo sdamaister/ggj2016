@@ -57,7 +57,7 @@ public class SpriteToCamera : MonoBehaviour {
 
 		transform.localPosition = 
 			new Vector3(
-				0.0f + normalizedLevelX * sprite.sprite.bounds.extents.x, 
+				0.0f + -1.0f * normalizedLevelX * sprite.sprite.bounds.extents.x, 
 				transform.localPosition.y,
 				transform.localPosition.z);
 
