@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour {
 	[Range (0.0f, 4.0f)]
     public float characterAirSpeed = 1.5f;
 
-	[Range (0.0f, 600.0f)]
+	[Range (0.0f, 900.0f)]
     public float jumpForce = 600.0f;
 
     private Rigidbody rb;
@@ -60,11 +60,6 @@ public class CharacterMovement : MonoBehaviour {
         else
         {
             animator.SetFloat("speed", 0.0f);
-        }
-
-        if (bJumping)
-        {
-            Debug.Log("Jumping!!!!");
         }
 
         animator.SetBool("bJumping", bJumping);
