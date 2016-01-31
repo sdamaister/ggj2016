@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WoodV3_Tilled
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 3ec2a6362a1f1d24fb56fa4f5054472d, type: 3}
   m_ShaderKeywords: _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -85,6 +85,13 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 1148e4d5330945c4cac0efc860e1780f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -138,6 +145,22 @@ Material:
         first:
           name: _EmissionScaleUI
         second: 0
+      data:
+        first:
+          name: _NormalIntensity
+        second: 0.2
+      data:
+        first:
+          name: _Roughness
+        second: 0
+      data:
+        first:
+          name: _RimAmmount
+        second: 0.05
+      data:
+        first:
+          name: _RimPower
+        second: 4
     m_Colors:
       data:
         first:
@@ -146,7 +169,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.5441177, g: 0.521161, b: 0.49210644, a: 1}
+        second: {r: 0.45588237, g: 0.2665018, b: 0.026816608, a: 1}
       data:
         first:
           name: _SpecColor
@@ -155,3 +178,7 @@ Material:
         first:
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0.49019608, g: 0.21176471, b: 0, a: 1}
