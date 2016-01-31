@@ -128,6 +128,10 @@ Prefab:
       propertyPath: bubbleTimer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11490926, guid: 0d5b751b0b940407681775323e94414d, type: 2}
+      propertyPath: speaking
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5b751b0b940407681775323e94414d, type: 2}
   m_IsPrefabParent: 0
@@ -531,7 +535,7 @@ RectTransform:
   - {fileID: 1295023281}
   m_Father: {fileID: 2088287858}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.42800003, y: 0.4656894}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 146, y: 104}
   m_SizeDelta: {x: 0, y: 0}
