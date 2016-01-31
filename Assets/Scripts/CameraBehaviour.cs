@@ -16,9 +16,11 @@ public class CameraBehaviour : MonoBehaviour {
         }
 		cm = character.GetComponent<CharacterMovement> ();
 		transform.position = character.transform.position - transform.forward * cameraDistance;
+
 		newPosition = transform.position;
-	}
-	
+        Physics.gravity = new Vector3(0, -9.81F, 0);
+    }
+
 	void FixedUpdate () {
 		Vector3 transf = character.transform.position - transform.forward * cameraDistance;
 		if (!cm.bJumping) {

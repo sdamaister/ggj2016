@@ -137,19 +137,19 @@ Material:
       data:
         first:
           name: _NormalIntensity
-        second: 0.51
+        second: 0.96
       data:
         first:
           name: _Roughness
+        second: 0
+      data:
+        first:
+          name: _RimAmmount
         second: 0.3
       data:
         first:
           name: _RimPower
-        second: 5
-      data:
-        first:
-          name: _RimAmmount
-        second: 0
+        second: 3.13
     m_Colors:
       data:
         first:
