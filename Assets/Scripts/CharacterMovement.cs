@@ -4,13 +4,14 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour {
 
-	[Range (0.0f, 5.0f)]
+	[Range (0.0f, 15.0f)]
     public float characterGroundSpeed = 2.0f;
 
-	[Range (0.0f, 4.0f)]
+	[Range (0.0f, 14.0f)]
     public float characterAirSpeed = 1.5f;
 
-	[Range (0.0f, 900.0f)]
+
+	[Range (0.0f, 1500.0f)]
     public float jumpForce = 600.0f;
 
     private Rigidbody rb;
@@ -24,11 +25,18 @@ public class CharacterMovement : MonoBehaviour {
     public bool bJumping;
     private bool bBlockMovement;
 
+
+    public AudioClip jumpClip;
+    public AudioClip landClip;
+
+    private AudioSource audioSource;
+
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
         mesh = GetComponentInChildren<Transform>();
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         bApplyJump = false;
         bJumping = false;
@@ -131,5 +139,14 @@ public class CharacterMovement : MonoBehaviour {
     void SetJumping(bool bMustJump)
     {
         bJumping = bMustJump;
+
+        if (bJumping)
+        {
+            audioSource.PlayOneShot(jumpClip);
+        }
+        else
+        {
+            audioSource.PlayOneShot(landClip);
+        }
     }
 }

@@ -2,16 +2,27 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
   serializedVersion: 6
+=======
+  serializedVersion: 5
+>>>>>>> origin/master
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Nuca
+<<<<<<< HEAD
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
+=======
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+>>>>>>> origin/master
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -19,7 +30,11 @@ Material:
         first:
           name: _MainTex
         second:
+<<<<<<< HEAD
           m_Texture: {fileID: 0}
+=======
+          m_Texture: {fileID: 2800000, guid: 1c867b259563648e3a34cc813306005d, type: 3}
+>>>>>>> origin/master
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -38,42 +53,66 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
           name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
+=======
           name: _ParallaxMap
+>>>>>>> origin/master
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
+          name: _ParallaxMap
+=======
           name: _OcclusionMap
+>>>>>>> origin/master
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
+          name: _OcclusionMap
+=======
           name: _EmissionMap
+>>>>>>> origin/master
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
+          name: _EmissionMap
+=======
           name: _DetailMask
+>>>>>>> origin/master
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
+          name: _DetailMask
+=======
           name: _DetailAlbedoMap
+>>>>>>> origin/master
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _DetailAlbedoMap
+=======
+          name: _MetallicGlossMap
+>>>>>>> origin/master
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -81,6 +120,13 @@ Material:
     m_Floats:
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+>>>>>>> origin/master
           name: _SrcBlend
         second: 1
       data:
@@ -89,8 +135,13 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
           name: _Cutoff
         second: 0.5
+=======
+          name: _Parallax
+        second: .0199999996
+>>>>>>> origin/master
       data:
         first:
           name: _ZWrite
@@ -98,21 +149,28 @@ Material:
       data:
         first:
           name: _Glossiness
+<<<<<<< HEAD
         second: 0.5
       data:
         first:
           name: _Metallic
         second: 0
+=======
+        second: .5
+>>>>>>> origin/master
       data:
         first:
           name: _BumpScale
         second: 1
       data:
         first:
+<<<<<<< HEAD
           name: _Parallax
         second: 0.02
       data:
         first:
+=======
+>>>>>>> origin/master
           name: _OcclusionStrength
         second: 1
       data:
@@ -127,6 +185,17 @@ Material:
         first:
           name: _Mode
         second: 0
+<<<<<<< HEAD
+=======
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0
+>>>>>>> origin/master
     m_Colors:
       data:
         first:
@@ -136,3 +205,10 @@ Material:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
+=======
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> origin/master

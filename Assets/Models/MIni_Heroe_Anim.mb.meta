@@ -122,6 +122,10 @@ ModelImporter:
     4300016: Mano_IZ
     4300018: Pelo_03
     4300020: Pelo_04
+<<<<<<< HEAD
+=======
+    4300022: Torso
+>>>>>>> origin/master
     7400000: Take 001
     9500000: //RootNode
     13700000: Antebrazo_DR
@@ -135,6 +139,10 @@ ModelImporter:
     13700016: Pelo_04
     13700018: Pierna_DR
     13700020: Pierna_IZ
+<<<<<<< HEAD
+=======
+    13700022: Torso
+>>>>>>> origin/master
   materials:
     importMaterials: 1
     materialName: 0
@@ -142,6 +150,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+<<<<<<< HEAD
     resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
@@ -153,6 +162,14 @@ ModelImporter:
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
+=======
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+>>>>>>> origin/master
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -176,13 +193,20 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
+<<<<<<< HEAD
     normalImportMode: 0
     tangentImportMode: 3
+=======
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+>>>>>>> origin/master
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
+<<<<<<< HEAD
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -195,6 +219,18 @@ ModelImporter:
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
+=======
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+>>>>>>> origin/master
   additionalBone: 0
   userData: 
   assetBundleName: 
