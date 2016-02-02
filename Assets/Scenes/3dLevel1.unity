@@ -3560,7 +3560,7 @@ Transform:
   m_Children:
   - {fileID: 401752272}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1001 &687617347
 Prefab:
   m_ObjectHideFlags: 0
@@ -5872,6 +5872,14 @@ Prefab:
       propertyPath: level
       value: 
       objectReference: {fileID: 1611313787}
+    - target: {fileID: 8277128, guid: b7d155b4727429d4987953bb82b2b04a, type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277128, guid: b7d155b4727429d4987953bb82b2b04a, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7d155b4727429d4987953bb82b2b04a, type: 2}
   m_IsPrefabParent: 0
@@ -7528,7 +7536,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

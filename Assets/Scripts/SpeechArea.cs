@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
-using System.Collections;
+#endif
 
 public class SpeechArea : MonoBehaviour {
 	public string speech = "";
@@ -49,7 +50,12 @@ public class SpeechArea : MonoBehaviour {
 
 	void OnSceneGUI ()
     {
+		#if UNITY_EDITOR
+
    		UnityEditor.Handles.Label(this.transform.position, "asdfasdf");
+
+		#endif
+
     }
 
 	void OnDrawGizmos() {
