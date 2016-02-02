@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
-<<<<<<< HEAD
-=======
 
 using System.Collections;
->>>>>>> origin/master
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -55,11 +52,9 @@ public class SpeechArea : MonoBehaviour {
 	#if UNITY_EDITOR
 	void OnSceneGUI ()
     {
-		#if UNITY_EDITOR
 
    		UnityEditor.Handles.Label(this.transform.position, "asdfasdf");
 
-		#endif
 
     }
     #endif

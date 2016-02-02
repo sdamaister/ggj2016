@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 ﻿
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
-#if UNITY_EDITOR
-=======
 ﻿#if UNITY_EDITOR
 using UnityEditor;
->>>>>>> origin/master
 
 [CustomEditor(typeof(SpeechArea))]
 public class SpeechAreaEditor : Editor {
@@ -28,10 +21,6 @@ public class SpeechAreaEditor : Editor {
 		Handles.Label(myTarget.gameObject.transform.position, myTarget.speech);
 	}
 }
-<<<<<<< HEAD
 #endif
 
 
-=======
-#endif
->>>>>>> origin/master
