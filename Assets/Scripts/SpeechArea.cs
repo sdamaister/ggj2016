@@ -1,4 +1,9 @@
 ﻿using UnityEngine;
+<<<<<<< HEAD
+=======
+
+using System.Collections;
+>>>>>>> origin/master
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -47,7 +52,7 @@ public class SpeechArea : MonoBehaviour {
 		}
 	}
 
-
+	#if UNITY_EDITOR
 	void OnSceneGUI ()
     {
 		#if UNITY_EDITOR
@@ -57,6 +62,7 @@ public class SpeechArea : MonoBehaviour {
 		#endif
 
     }
+    #endif
 
 	void OnDrawGizmos() {
         Gizmos.color = new Color(1.0f ,1.0f, 0.0f, 0.25f);
